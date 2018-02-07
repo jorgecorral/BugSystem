@@ -1,6 +1,7 @@
 class Bug < ApplicationRecord
 	enum solucionado: [:pendente, :resolvido]
   belongs_to :projeto
+
   after_update do
   	       if self.solucionado
        notifier = Slack::Notifier.new "https://hooks.slack.com/services/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" do
@@ -17,4 +18,5 @@ class Bug < ApplicationRecord
         end
         notifier.ping("Foi adicionado um bug no projeto " + self.projeto.nome + " cujo a descrição é " + self.descricao)
   end
+
 end
