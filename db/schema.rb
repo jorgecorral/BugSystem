@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20180207004159) do
   create_table "bugs", force: :cascade do |t|
     t.string "descricao"
     t.string "solucao"
-    t.integer "solucionado"
+    t.integer "solucionado", default: 0
     t.bigint "projeto_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
