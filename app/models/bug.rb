@@ -3,7 +3,7 @@ class Bug < ApplicationRecord
   belongs_to :projeto
 
   after_update do
-  	       if self.solucionado
+  	       if self.solucionado ==1
        notifier = Slack::Notifier.new "https://hooks.slack.com/services/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" do
   defaults channel: "#general",
          username: "notifier"
