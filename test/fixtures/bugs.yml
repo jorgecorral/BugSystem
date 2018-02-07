@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descricao: MyString
+  solucao: MyString
+  solucionado: false
+  projeto: one
+
+two:
+  descricao: MyString
+  solucao: MyString
+  solucionado: false
+  projeto: two
