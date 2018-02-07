@@ -13,6 +13,7 @@ gem 'devise'
 gem 'cancancan'
 gem 'slack-notifier'
 gem 'rails_admin_rollincode'
+gem 'devise-bootstrap-views'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
