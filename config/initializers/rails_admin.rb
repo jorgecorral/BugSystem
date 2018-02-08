@@ -29,6 +29,7 @@ config.model Bug do
   create do
     field :descricao
     field :projeto
+    field :imagem
   end
   edit do
     field :descricao do
